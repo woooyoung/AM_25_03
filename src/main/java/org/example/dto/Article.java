@@ -1,8 +1,7 @@
-package org.example;
+package org.example.dto;
 
-public class Article {
-    private int id;
-    private String regDate;
+public class Article extends Dto {
+
     private String updateDate;
     private String title;
     private String body;
