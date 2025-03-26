@@ -136,8 +136,8 @@ public class MemberController extends Controller {
 
     public void makeTestData() {
         System.out.println("==회원 테스트 데이터 생성==");
-        members.add(new Member(1, Util.getNowStr(), "test1", "test1", "test1"));
-        members.add(new Member(2, Util.getNowStr(), "test2", "test2", "test2"));
-        members.add(new Member(3, Util.getNowStr(), "test3", "test3", "test3"));
+        members.add(new Member(1, Util.getNowStr(), "test1", "test1", "김철수"));
+        members.add(new Member(2, Util.getNowStr(), "test2", "test2", "김영희"));
+        members.add(new Member(3, Util.getNowStr(), "test3", "test3", "홍길동"));
     }
 }
