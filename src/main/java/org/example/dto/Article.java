@@ -6,6 +6,8 @@ public class Article extends Dto {
     private String title;
     private String body;
 
+    private Member member;
+
     public Article(int id, String regDate, String updateDate, String title, String body) {
         this.id = id;
         this.regDate = regDate;
