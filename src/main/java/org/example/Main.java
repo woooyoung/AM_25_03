@@ -16,9 +16,10 @@ public class Main {
         System.out.println("==프로그램 시작==");
 
         int lastArticleId = 3;
-        int lastMemberId = 0;
+        int lastMemberId = 3;
 
-        makeTestData();
+        articleMakeTestData();
+        memberMakeTestData();
 
         while (true) {
             System.out.print("명령어) ");
@@ -204,11 +205,18 @@ public class Main {
     /**
      * 테스트 데이터 생성 함수
      **/
-    private static void makeTestData() {
-        System.out.println("==테스트 데이터 생성==");
+    private static void articleMakeTestData() {
+        System.out.println("==게시글 테스트 데이터 생성==");
         articles.add(new Article(1, "2024-12-12 12:12:12", "2024-12-12 12:12:12", "제목123", "내용1"));
         articles.add(new Article(2, Util.getNowStr(), Util.getNowStr(), "제목27", "내용2"));
         articles.add(new Article(3, Util.getNowStr(), Util.getNowStr(), "제목1233", "내용3"));
+    }
+
+    private static void memberMakeTestData() {
+        System.out.println("==회원 테스트 데이터 생성==");
+        members.add(new Member(1, Util.getNowStr(), "test1", "test1", "test1"));
+        members.add(new Member(2, Util.getNowStr(), "test2", "test2", "test2"));
+        members.add(new Member(3, Util.getNowStr(), "test3", "test3", "test3"));
     }
 }
 
