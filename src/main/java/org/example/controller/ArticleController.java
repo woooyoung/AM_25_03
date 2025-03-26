@@ -174,7 +174,7 @@ public class ArticleController extends Controller {
     /**
      * 테스트 데이터 생성 함수
      **/
-    void makeTestData() {
+    public void makeTestData() {
         System.out.println("==게시글 테스트 데이터 생성==");
         articles.add(new Article(1, "2024-12-12 12:12:12", "2024-12-12 12:12:12", "제목123", "내용1"));
         articles.add(new Article(2, Util.getNowStr(), Util.getNowStr(), "제목27", "내용2"));
